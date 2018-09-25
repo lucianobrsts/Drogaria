@@ -12,8 +12,8 @@ public class EstadoDAOTest {
 	@Ignore
 	public void salvar() {
 		Estado estado = new Estado();
-		estado.setNome("São Paulo");
-		estado.setSigla("SP");
+		estado.setNome("Rio Grande do Sul");
+		estado.setSigla("RA");
 
 		EstadoDAO estadoDAO = new EstadoDAO();
 		estadoDAO.salvar(estado);
@@ -38,11 +38,19 @@ public class EstadoDAOTest {
 	}
 
 	@Test
-	@Ignore
 	public void excluir() {
 		Long codigo = 6L;
 		EstadoDAO estadoDAO = new EstadoDAO();
 		Estado estado = estadoDAO.buscar(codigo);
 		estadoDAO.excluir(estado);
+	}
+
+	@Test
+	public void editar() {
+		Long codigo = 7L;
+		EstadoDAO estadoDAO = new EstadoDAO();
+		Estado estado = estadoDAO.buscar(codigo);
+		estado.setSigla("RS");
+		estadoDAO.editar(estado);
 	}
 }
