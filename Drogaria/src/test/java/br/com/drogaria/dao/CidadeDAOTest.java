@@ -1,5 +1,7 @@
 package br.com.drogaria.dao;
 
+import java.util.List;
+
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -21,12 +23,22 @@ public class CidadeDAOTest {
 		cidadeDAO.salvar(cidade);
 	}
 
+	@SuppressWarnings("unused")
+	@Test
+	@Ignore
 	public void listar() {
+		CidadeDAO cidadeDAO = new CidadeDAO();
+		List<Cidade> resultado = cidadeDAO.listar();
 
 	}
 
+	@SuppressWarnings("unused")
+	@Test
 	public void buscar() {
-
+		Long codigo = 1L;
+		CidadeDAO cidadeDAO = new CidadeDAO();
+		 Cidade cidade = cidadeDAO.buscar(codigo);
+		 
 	}
 
 	public void excluir() {

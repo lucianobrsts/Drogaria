@@ -31,4 +31,9 @@ public class Cidade extends GenericDomain {
 		this.estado = estado;
 	}
 
+	@Override
+	public String toString() {
+		return "Cidade [nome=" + nome + ", estado=" + estado + "]";
+	}
+	
 }
