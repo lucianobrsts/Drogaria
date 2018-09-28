@@ -34,15 +34,20 @@ public class CidadeDAOTest {
 
 	@SuppressWarnings("unused")
 	@Test
+	@Ignore
 	public void buscar() {
 		Long codigo = 1L;
 		CidadeDAO cidadeDAO = new CidadeDAO();
-		 Cidade cidade = cidadeDAO.buscar(codigo);
-		 
+		Cidade cidade = cidadeDAO.buscar(codigo);
+
 	}
 
+	@Test
 	public void excluir() {
-
+		Long codigo = 1L;
+		CidadeDAO cidadeDAO = new CidadeDAO();
+		Cidade cidade = cidadeDAO.buscar(codigo);
+		cidadeDAO.excluir(cidade);
 	}
 
 	public void editar() {
