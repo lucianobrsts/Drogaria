@@ -60,5 +60,4 @@ public class CidadeDAOTest {
 		cidade.setNome("Maranguape");
 		cidadeDAO.editar(cidade);
 	}
-
 }
