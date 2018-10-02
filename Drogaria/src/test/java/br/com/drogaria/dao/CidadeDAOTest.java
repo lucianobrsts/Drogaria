@@ -43,6 +43,7 @@ public class CidadeDAOTest {
 	}
 
 	@Test
+	@Ignore
 	public void excluir() {
 		Long codigo = 1L;
 		CidadeDAO cidadeDAO = new CidadeDAO();
@@ -50,8 +51,14 @@ public class CidadeDAOTest {
 		cidadeDAO.excluir(cidade);
 	}
 
+	@Test
+	@Ignore
 	public void editar() {
-
+		Long codigo = 1L;
+		CidadeDAO cidadeDAO = new CidadeDAO();
+		Cidade cidade = cidadeDAO.buscar(codigo);
+		cidade.setNome("Maranguape");
+		cidadeDAO.editar(cidade);
 	}
 
 }
