@@ -6,7 +6,6 @@ import java.util.List;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import br.com.drogaria.domain.Cidade;
 import br.com.drogaria.domain.Fabricante;
 import br.com.drogaria.domain.Produto;
 
@@ -45,8 +44,6 @@ public class ProdutoDAOTest {
 		Long codigo = 1L;
 		ProdutoDAO produtoDAO = new ProdutoDAO();
 		Produto produto = produtoDAO.buscar(codigo);
-		System.out.println(produto);
-
 	}
 
 	@Test
