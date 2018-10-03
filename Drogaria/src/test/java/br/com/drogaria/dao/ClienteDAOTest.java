@@ -10,7 +10,6 @@ import br.com.drogaria.domain.Cliente;
 import br.com.drogaria.domain.Pessoa;
 
 public class ClienteDAOTest {
-
 	@Test
 	@Ignore
 	public void salvar() {
