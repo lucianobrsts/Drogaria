@@ -18,8 +18,8 @@ public class ItemVenda extends GenericDomain {
 
 	@ManyToOne
 	@JoinColumn(nullable = false)
-
 	private Produto produto;
+
 	@ManyToOne
 	@JoinColumn(nullable = false)
 	private Venda venda;
