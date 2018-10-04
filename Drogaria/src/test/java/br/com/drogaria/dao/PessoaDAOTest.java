@@ -64,6 +64,8 @@ public class PessoaDAOTest {
 		Long codigo = 2L;
 		PessoaDAO pessoaDAO = new PessoaDAO();
 		Pessoa pessoa = pessoaDAO.buscar(codigo);
+		pessoa.setNome("Carlos Santos");
+		pessoa.setCpf("123.736.555.72");
 		pessoaDAO.editar(pessoa);
 	}
 }
