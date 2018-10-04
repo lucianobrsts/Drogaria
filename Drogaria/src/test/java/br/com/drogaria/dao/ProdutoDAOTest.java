@@ -10,7 +10,6 @@ import br.com.drogaria.domain.Fabricante;
 import br.com.drogaria.domain.Produto;
 
 public class ProdutoDAOTest {
-
 	@Test
 	@Ignore
 	public void salvar() {
